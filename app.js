@@ -57,6 +57,11 @@ var main = function(){
 			$(this).removeClass("animated shake")
 		});
 
+	$('.aboutS').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+		function(){
+			$(this).removeClass("animated slideInUp")
+		});
+
 };
 
 $(document).ready(main);
